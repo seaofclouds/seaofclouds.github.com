@@ -7,16 +7,16 @@
     <script language="javascript" src="http://github.com/seaofclouds/tweet/raw/master/javascripts/jquery.tweet.js" type="text/javascript"></script>
     <script type='text/javascript'>
       $(document).ready(function(){
-        (function($) {  // Wrapper to make sure that the $ is used by jQuery and wasn't taken over by another library
-          // twitter
-            $("#tweets").tweet({
+        (function($) {
+          $(".tweet").tweet({
             join_text: "auto",
             count: 1,
-            auto_join_text_default: "seaofclouds said,",      // [string]   auto text for non verb: "i said" bullocks
-            auto_join_text_ed: "seaofclouds",                 // [string]   auto text for past tense: "i" surfed
-            auto_join_text_ing: "seaofclouds was",             // [string]   auto tense for present tense: "i was" surfing
-            auto_join_text_reply: "seaofclouds replied to",   // [string]   auto tense for replies: "i replied to" @someone
-            auto_join_text_url: "seaofclouds was looking at",  // [string]   auto tense for urls: "i was looking at" http:...
+            // avatar_size: 32,
+            auto_join_text_default: "seaofclouds said,",
+            auto_join_text_ed: "seaofclouds",
+            auto_join_text_ing: "seaofclouds was",
+            auto_join_text_reply: "seaofclouds replied to",
+            auto_join_text_url: "seaofclouds was looking at",
             loading:   "seaofclouds is loading tweets... "
           });
         })(jQuery);
@@ -34,28 +34,30 @@
       a {
         color:#3367a9;
       }
-      .footer {
-        font-size:80%;
-        color:#777;
-      }
-      #tweets ul, #tweets li, #tweets p {
-        display: block;
-        list-style-type:none;
-      }
-      #tweets .tweet_text {
-        color: #007C69;
-      }
-      #tweets .tweet_text a {
-        color: #007C3E;
-      }
-      #tweets .heart {
-        color: #8C57A1;
-      }
+      .tweet {
+        font-family: Georgia, serif;
+        font-size: 140%;
+        color: #085258; }
+        .tweet .tweet_list {
+          -webkit-border-radius: .5em;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          color:#007C69;}
+          .tweet .tweet_text a {
+            color:#007C3E; }
+          .tweet .tweet_list li {
+            overflow: auto;
+            padding: .5em; }
+          .tweet .tweet_list .tweet_avatar {
+            padding-right: .5em;  }
+            .tweet .tweet_list .tweet_avatar img {
+              vertical-align: middle; }
     </style>
   </head>
   <body>
     <div class='container'>
-      <div id='tweets'></div>
+      <div class='tweet'></div>
       <p>find us at <a href="http://github.com/seaofclouds/">github</a>, <a href="http://twitter.com/seaofclouds/">twitter</a>, and <a href="http://flickr.com/seaofclouds/">flickr</a></p>
     </div>
   </body>
