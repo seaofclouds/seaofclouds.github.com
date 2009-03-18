@@ -1,11 +1,11 @@
 body{
   background-color: #fee471;
   text-align: center;
-	color:#00627c;                  /* grey-green */
-	padding-top: 100px;
+  color:#00627c;                  /* grey-green */
+  padding-top: 100px;
 }
 a{
- 	color:#3367a9;                  /* dark green */
+  color:#3367a9;                  /* dark green */
 }
 
 .container { 
@@ -49,17 +49,17 @@ color: #777;
   border:1px solid #555;
 }
 #flickr {
-	text-align: center;
-	margin-bottom: .6em;
+  text-align: center;
+  margin-bottom: .6em;
 }
 #flickr li {
   display: inline;
 }
 #flickr img {
-	width:3em;
-	height:3em;
-	margin-right: .5em;
-	border:1px solid #555;
+  width:3em;
+  height:3em;
+  margin-right: .5em;
+  border:1px solid #555;
 }
 p.clear {
   clear: both;
@@ -69,11 +69,11 @@ p.clear {
 
 #logo
 {
-	z-index: 9;
-	position: absolute;
-	top: -80px;
-	text-align: center;
-	width: 42em;
+  z-index: 9;
+  position: absolute;
+  top: -80px;
+  text-align: center;
+  width: 42em;
 }
 
 /* twitter status */
