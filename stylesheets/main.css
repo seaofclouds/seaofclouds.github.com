@@ -1,0 +1,91 @@
+body{
+  background-color: #fee471;
+  text-align: center;
+	color:#00627c;                  /* grey-green */
+	padding-top: 100px;
+}
+a{
+ 	color:#3367a9;                  /* dark green */
+}
+
+.container { 
+width:42em;
+min-width:554px; 
+margin:auto; 
+text-align:left; 
+position: relative;
+}
+
+.content {
+font-family: Georgia, serif;
+font-size: 180%;
+background-color: #fff;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+}
+.content-body {
+padding: 70px 1em 0 1em;
+}
+.content-body p {
+padding-bottom: 1em;
+}
+.footer {
+font-size: 85%;
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: center;
+color: #777;
+}
+.pics ul, .pics li {
+  display: inline;
+}
+.pics li {
+  margin-right: .1em;
+  margin-left: .1em;
+}
+.pics img {
+  width: .9em;
+  height: .9em;
+  border:1px solid #555;
+}
+#flickr {
+	text-align: center;
+	margin-bottom: .6em;
+}
+#flickr li {
+  display: inline;
+}
+#flickr img {
+	width:3em;
+	height:3em;
+	margin-right: .5em;
+	border:1px solid #555;
+}
+p.clear {
+  clear: both;
+  margin-top: 1em;
+}
+/* banner image */
+
+#logo
+{
+	z-index: 9;
+	position: absolute;
+	top: -80px;
+	text-align: center;
+	width: 42em;
+}
+
+/* twitter status */
+#tweets ul, #tweets li, #tweets p {
+  display: inline;
+}
+#tweets .tweet_text {
+  color: #007C69;
+}
+#tweets .tweet_text a {
+  color: #007C3E;
+}
+#tweets .heart {
+  color: #8C57A1;
+}

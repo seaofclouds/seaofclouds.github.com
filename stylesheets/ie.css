@@ -1,0 +1,33 @@
+#logo img {
+  background-image: expression(
+  this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + (this.tagName=='IMG' ? this['src'] : this.currentStyle['backgroundImage'].split('\"')[1]) + ")",
+  this.runtimeStyle.backgroundImage = "none",
+  this.src = "/images/blank.gif",
+  this.width = this.style.width | this.clientWidth,
+  this.height = this.style.height | this.clientHeight
+  );
+}
+
+/* rounded corners */
+
+
+.rct div {
+   background: url(/images/rc-tl.png) no-repeat top left;
+}
+.rct {
+   background: url(/images/rc-tr.png) no-repeat top right;
+}
+.rcb div {
+   background: url(/images/rc-bl.png) no-repeat bottom left;
+}
+.rcb {
+   background: url(/images/rc-br.png) no-repeat bottom right;
+}
+
+.rct div, .rct, 
+.rcb div, .rcb {
+   width: 100%;
+   line-height: 20px;
+}
+
+
